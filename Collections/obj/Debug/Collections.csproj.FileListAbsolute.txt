@@ -1,0 +1,7 @@
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\bin\Debug\Collections.exe.config
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\bin\Debug\Collections.exe
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\bin\Debug\Collections.pdb
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\obj\Debug\Collections.csproj.AssemblyReference.cache
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\obj\Debug\Collections.csproj.CoreCompileInputs.cache
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\obj\Debug\Collections.exe
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Collections\obj\Debug\Collections.pdb

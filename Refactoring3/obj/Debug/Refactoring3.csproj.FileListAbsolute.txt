@@ -1,0 +1,7 @@
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\obj\Debug\Refactoring3.csproj.AssemblyReference.cache
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\obj\Debug\Refactoring3.csproj.CoreCompileInputs.cache
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\bin\Debug\Refactoring3.exe.config
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\bin\Debug\Refactoring3.exe
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\bin\Debug\Refactoring3.pdb
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\obj\Debug\Refactoring3.exe
+C:\Users\Aya\OneDrive\Desktop\ayaaatea87-OOP-Assignment-3\Refactoring3\obj\Debug\Refactoring3.pdb
