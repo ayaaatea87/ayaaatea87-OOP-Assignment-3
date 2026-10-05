@@ -18,6 +18,17 @@ namespace Generics
                 Name = "Aya"
             });
 
+            studentStore.Add(new Student
+            {
+                Id = 2,
+                Name = "Mona"
+            });
+
+            var student = studentStore.GetById(2);
+
+            Console.WriteLine($"Student: {student?.Name}");
+
+
             var courseStore = new Store<Course>();
 
             courseStore.Add(new Course
@@ -27,9 +38,9 @@ namespace Generics
                 Price = 1500
             });
 
-            Console.WriteLine(studentStore.GetAll().Count);
-            Console.WriteLine(courseStore.GetAll().Count);
+            var course = courseStore.GetById(1);
 
+            Console.WriteLine($"Course: {course?.Title}");
 
         }
     }
