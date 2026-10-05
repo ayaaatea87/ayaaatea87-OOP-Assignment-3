@@ -26,8 +26,7 @@ public static class EnumerableExtensions
 
             if (count == pageSize)
                 yield break;
-
-            index++;
+                index++;
         }
     }
 

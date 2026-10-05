@@ -11,7 +11,6 @@ namespace Refactoring3.Part_03.BlockedUsers
     {
         public static int CountBlocked(HashSet<int> blockedIds, int[] requestIds)
         {
-            //var blocked = new HashSet<int>(blockedIds);
             int count = 0;
             foreach (var id in requestIds)
             {
