@@ -10,38 +10,36 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            var studentStore = new Store<Student>();
+            var store = new Store<Student>();
 
-            studentStore.Add(new Student
+            store.Add(new Student
             {
                 Id = 1,
                 Name = "Aya"
             });
 
-            studentStore.Add(new Student
+            store.Add(new Student
             {
                 Id = 2,
                 Name = "Mona"
             });
 
-            var student = studentStore.GetById(2);
+            var student = store.GetById(2);
 
-            Console.WriteLine($"Student: {student?.Name}");
+            Console.WriteLine(student?.Name);
 
-
-            var courseStore = new Store<Course>();
-
-            courseStore.Add(new Course
+            try
             {
-                Id = 1,
-                Title = "C#",
-                Price = 1500
-            });
-
-            var course = courseStore.GetById(1);
-
-            Console.WriteLine($"Course: {course?.Title}");
-
+                store.Add(new Student
+                {
+                    Id = 2,
+                    Name = "Sara"
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
