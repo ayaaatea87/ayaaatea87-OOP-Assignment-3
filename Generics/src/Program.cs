@@ -10,36 +10,28 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            var store = new Store<Student>();
+            var students = new List<Student>
+{
+    new Student { Id = 1, Name = "Aya" },
+    new Student { Id = 2, Name = "Mona" },
+    new Student { Id = 3, Name = "Sara" },
+    new Student { Id = 4, Name = "Nour" },
+    new Student { Id = 5, Name = "Laila" }
+};
 
-            store.Add(new Student
+            Console.WriteLine("Page 2:");
+
+            foreach (var student in students.Page(2, 2))
             {
-                Id = 1,
-                Name = "Aya"
-            });
-
-            store.Add(new Student
-            {
-                Id = 2,
-                Name = "Mona"
-            });
-
-            var student = store.GetById(2);
-
-            Console.WriteLine(student?.Name);
-
-            try
-            {
-                store.Add(new Student
-                {
-                    Id = 2,
-                    Name = "Sara"
-                });
+                Console.WriteLine(student.Name);
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            var foundStudent = students.FindById(3);
+
+            Console.WriteLine($"Found: {foundStudent?.Name}");
+            var dictionary = students.ToIdDictionary();
+
+            Console.WriteLine($"Dictionary count: {dictionary.Count}");
+            Console.WriteLine($"Student with Id 4: {dictionary[4].Name}");
         }
     }
 }
