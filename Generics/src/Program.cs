@@ -10,15 +10,15 @@ namespace Generics
     {
         static void Main(string[] args)
         {
-            var store = new StudentStore();
+            var studentStore = new Store<Student>();
 
-            store.Add(new Student { Id = 1, Name = "Aya" });
-            store.Add(new Student { Id = 2, Name = "Mona" });
+            studentStore.Add(new Student
+            {
+                Id = 1,
+                Name = "Aya"
+            });
 
-            var student = store.GetById(2);
-            Console.WriteLine(student.Name);
-
-            var courseStore = new CourseStore();
+            var courseStore = new Store<Course>();
 
             courseStore.Add(new Course
             {
@@ -27,12 +27,10 @@ namespace Generics
                 Price = 1500
             });
 
-            var course = courseStore.GetById(1);
+            Console.WriteLine(studentStore.GetAll().Count);
+            Console.WriteLine(courseStore.GetAll().Count);
 
-            Console.WriteLine(course?.Title);
-            Console.WriteLine(course?.Price);
 
-            
         }
     }
 }
