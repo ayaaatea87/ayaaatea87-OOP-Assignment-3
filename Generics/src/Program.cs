@@ -18,6 +18,20 @@ namespace Generics
             var student = store.GetById(2);
             Console.WriteLine(student.Name);
 
+            var courseStore = new CourseStore();
+
+            courseStore.Add(new Course
+            {
+                Id = 1,
+                Title = "C#",
+                Price = 1500
+            });
+
+            var course = courseStore.GetById(1);
+
+            Console.WriteLine(course?.Title);
+            Console.WriteLine(course?.Price);
+
             
         }
     }
